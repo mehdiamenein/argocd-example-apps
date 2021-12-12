@@ -6,12 +6,12 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   # Un-comment this, if you have succesfully issued your certificate
-  #tls:
-  #- hosts:
-  #    - <YOUR_IP>.nip.io
+  tls:
+  - hosts:
+      - nginx.hekv.org
   # Change the secret name to ssl-cert-production 
   # for a valid, green certificate in your browser
-  #  secretName: ssl-cert-staging
+    secretName: ssl-cert-production
   rules:
   - host: nginx.hekv.org
     http:
