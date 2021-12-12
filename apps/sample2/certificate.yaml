@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: ghost.test.kb.dev.amenein
+  name: ghost.hekv.org
 spec:
-  secretName: ghost.test.kb.dev.amenein
+  secretName: ghost.hekv.org
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - ghost.test.kb.dev.amenein.net
+    - ghost.hekv.org
