@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - ghost.test.kb.dev.amenein.net
-      secretName: ghost.test.kb.dev.amenein
+        - ghost.hekv.org
+      secretName: ghost.hekv.org
   rules:
-    - host: ghost.test.kb.dev.amenein.net
+    - host: ghost.hekv.org
       http:
         paths:
           - path: /
