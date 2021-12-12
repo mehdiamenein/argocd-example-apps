@@ -24,4 +24,4 @@ spec:
             - containerPort: 2368
           env:
             - name: url
-              value: https://ghost.test.kb.dev.amenein.net
+              value: https://ghost.hekv.org
