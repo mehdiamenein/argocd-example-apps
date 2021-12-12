@@ -5,16 +5,13 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /
-    certmanager.k8s.io/cluster-issuer: "letsencrypt-production"
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  #   certmanager.k8s.io/cluster-issuer: "letsencrypt-production"
+  #   nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
-  # Un-comment this, if you have succesfully issued your certificate
-  tls:
-  - hosts:
-      - nginx.hekv.org
-  # Change the secret name to ssl-cert-production 
-  # for a valid, green certificate in your browser
-    secretName: ssl-cert-production
+  # tls:
+  # - hosts:
+  #     - nginx.hekv.org
+  #   secretName: ssl-cert-production
   rules:
   - host: nginx.hekv.org
     http:
